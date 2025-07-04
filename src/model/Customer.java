@@ -43,12 +43,6 @@ public class Customer {
         this.balance -= amount;
     }
 
-    public void addBalance(double amount) {
-        if (amount <= 0) {
-            throw new IllegalArgumentException("Amount must be positive");
-        }
-        this.balance += amount;
-    }
 
     public boolean hasBalance(double amount) {
         return balance >= amount;
